@@ -194,29 +194,19 @@ int main()
         cout<<"**Press 5 to delete data**"<<endl;
         cout<<"**Press 6 to exit**"<<endl;
         cin>>value;
-        switch(value)
-        {
-        case 1:
+        if(value==1)
             enterData();
-            break;
-        case 2:
+        else if(value==2)
             showData();
-            break;
-        case 3:
+        else if(value==3)
             searchData();
-            break;
-        case 4:
+        else if(value==4)
             updateData();
-            break;
-        case 5:
+        else if(value==5)
             deleterecord();
+        else if(value==6)
             break;
-        case 6:
-            exit(0);
-            break;
-        default:
+        else
             cout<<"Invalid input"<<endl;
-            break;
         }
-    }
 }
